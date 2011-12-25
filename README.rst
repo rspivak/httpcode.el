@@ -6,19 +6,19 @@
     |  _  | | |   | | |  __/| |__| |_| | |_| | |___ _| |___| |___
     |_| |_| |_|   |_| |_|    \____\___/|____/|_____(_)_____|_____|
 
-*httpcode.el* provides a simple command *hc* that explains the meaning
+**httpcode.el** provides a simple command **hc** that explains the meaning
 of an HTTP status code in minibuffer.
 
 Installation
 ------------
 
-Copy *httpcode.el* to your *load-path* and add to your *.emacs*:
+Copy **httpcode.el** to your **load-path** and add to your **.emacs**:
 
 ::
 
     (require 'httpcode)
 
-Then run it with *M-x hc*
+Then run it with **M-x hc**
 
 
 Alternately use `Marmalade <http://marmalade-repo.org>`_:
