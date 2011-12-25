@@ -23,7 +23,7 @@
 ;;
 ;;   (require 'httpcode)
 ;;
-;; Then run it with with M-x hc
+;; Then run it with M-x hc
 ;;
 ;;; Code goes here:
 
