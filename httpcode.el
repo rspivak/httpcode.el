@@ -63,8 +63,10 @@
    (500 ("Internal Server Error" "Server got itself in trouble"))
    (501 ("Not Implemented" "Server does not support this operation"))
    (502 ("Bad Gateway" "Invalid responses from another server/proxy."))
-   (503 ("Service Unavailable" "The server cannot process the request due to a high load"))
-   (504 ("Gateway Timeout" "The gateway server did not receive a timely response"))
+   (503 ("Service Unavailable"
+         "The server cannot process the request due to a high load"))
+   (504 ("Gateway Timeout"
+         "The gateway server did not receive a timely response"))
    (505 ("HTTP Version Not Supported" "Cannot fulfill request."))
    ))
 
