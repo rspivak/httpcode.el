@@ -18,14 +18,14 @@ Copy **httpcode.el** to your **load-path** and add to your **.emacs**:
 
     (require 'httpcode)
 
-Then run it with **M-x hc**
-
-
 Alternately use `Marmalade <http://marmalade-repo.org>`_:
 
 ::
 
     M-x package-install httpcode
+
+
+Then run the command with **M-x hc**
 
 Usage
 -----
