@@ -3,6 +3,8 @@
 ;; Copyright (C) 2011  Ruslan Spivak
 
 ;; Author: Ruslan Spivak <ruslan.spivak@gmail.com>
+;; URL: http://github.com/rspivak/httpcode.el
+;; Version: 0.1
 ;; Keywords: convenience
 
 ;;; Commentary:
@@ -10,11 +12,11 @@
 ;; Explain the meaning of an HTTP status code. Copy httpcode.el to your
 ;; load-path and add to your .emacs:
 
-;;    (require 'httpcode)
+;;   (require 'httpcode)
 
 ;; Then run it with with M-x hc
 
-;;; Code:
+;;; Code goes here:
 
 (defconst http-codes
   '((100 ("Continue" "Request received, please continue"))
