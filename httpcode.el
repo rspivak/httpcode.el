@@ -95,4 +95,5 @@
     ))
 
 (provide 'httpcode)
-;;;httpcode.el ends here
+
+;;; httpcode.el ends here
