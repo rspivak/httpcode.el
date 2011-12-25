@@ -80,7 +80,7 @@
           (message
            "Status code %d\nMessage: %s\nCode explanation: %s"
            code (car description) (car (cdr description))))
-      (message "No description found for code: %d\n" code))
+      (message "No description found for code: %d" code))
     ))
 
 (provide 'httpcode)
