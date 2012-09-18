@@ -67,9 +67,15 @@
    (413 ("Request Entity Too Large" "Entity is too large."))
    (414 ("Request-URI Too Long" "URI is too long."))
    (415 ("Unsupported Media Type" "Entity body in unsupported format."))
-   (416 ("Requested Range Not Satisfiable" "Cannot satisfy request range."))
+   (416 ("Requested Range Not Satisfiable" "The client has asked for a portion of the file, but the server cannot supply that portion. For example, if the client asked for a part of the file that lies beyond the end of the file."))
    (417 ("Expectation Failed" "Expect condition could not be satisfied."))
    (418 ("I'm a teapot" "The HTCPCP server is a teapot"))
+   (420 ("Enhance Your Calm (Twitter)" "Not part of the HTTP standard, but returned by the Twitter Search and Trends API when the client is being rate limited. Other services may wish to implement the 429 Too Many Requests response code instead."))
+   (422 ("Unprocessable Entity (WebDAV)" "The request was well-formed but was unable to be followed due to semantic errors"))
+   (424 ("Failed Dependency (WebDAV)" "The request failed due to failure of a previous request."))
+   (426 ("Precondition Required" "The origin server requires the request to be conditional. Intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it, and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict."))
+   (429 ("Too Many Requests" "The user has sent too many requests in a given amount of time.\nIntended for use with rate limiting schemes."))
+   (431 ("Request Header Fields Too Large" "The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large."))
 
    (500 ("Internal Server Error" "Server got itself in trouble"))
    (501 ("Not Implemented" "Server does not support this operation"))
@@ -79,6 +85,7 @@
    (504 ("Gateway Timeout"
          "The gateway server did not receive a timely response"))
    (505 ("HTTP Version Not Supported" "Cannot fulfill request."))
+   (511 ("Network Authentication Required" "The client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network (e.g. 'captive portals' used to require agreement to Terms of Service before granting full Internet access via a Wi-Fi hotspot)."))
    ))
 
 ;;;###autoload
