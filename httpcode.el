@@ -1,31 +1,31 @@
-;;; httpcode.el --- explains the meaning of an HTTP status code
-;;
-;; Copyright (C) 2011  Ruslan Spivak
-;;
+;;; httpcode.el --- Explains the meaning of an HTTP status code
+
+;; Copyright (C) 2011 Ruslan Spivak
+
 ;; Author: Ruslan Spivak <ruslan.spivak@gmail.com>
-;; URL: http://github.com/rspivak/httpcode.el
+;; Homepage: http://github.com/rspivak/httpcode.el
 ;; Version: 0.1
-;;
+
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License as
 ;; published by the Free Software Foundation; either version 2 of
 ;; the License, or (at your option) any later version.
-;;
+
 ;; This program is distributed in the hope that it will be
 ;; useful, but WITHOUT ANY WARRANTY; without even the implied
 ;; warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
 ;; PURPOSE.  See the GNU General Public License for more details.
-;;
+
 ;;; Commentary:
-;;
+
 ;; Explain the meaning of an HTTP status code. Copy httpcode.el to your
 ;; load-path and add to your .emacs:
-;;
+
 ;;   (require 'httpcode)
-;;
-;; Then run it with M-x hc
-;;
-;;; Code goes here:
+
+;; Then run it with `M-x hc'.
+
+;;; Code:
 
 (defconst http-codes
   '((100 ("Continue" "Request received, please continue"))
@@ -90,7 +90,7 @@
 
 ;;;###autoload
 (defun hc (code)
-  "Display the meaning of an HTTP status code"
+  "Display the meaning of an HTTP status code."
   (interactive "nEnter HTTP code: ")
   (let ((found (assoc code http-codes)))
     (if found
@@ -102,5 +102,4 @@
     ))
 
 (provide 'httpcode)
-
 ;;; httpcode.el ends here
